@@ -1,9 +1,31 @@
-// import modules
-const { isEmpty } = require("..")
+// import
+const { createMail, sendMail } = require("..")
 
-// test items
-const arr1 = [0, 1, 2, 3, 4, 5]
-const obj1 = { item1: [0, 1, 2, 3] }
+// create the mailer
+const mail = createMail({
+  // pick tempalte
+  template: "template_1",
 
-// pass in items
-isEmpty(arr1, obj1)
+  // contact information
+  to: ["chrisburgin95@gmail.com", "chris@downloadyouthministry.com"],
+  from: "support@downloadyouthminsitry.com",
+  cc: "chrisburgin@downloadyouthministry.com",
+  bcc: "hair@downloadyouthministry.com",
+
+  // email subject
+  subject: "We have done a thing!",
+})
+
+// send the mail
+sendMail({
+  // send mailer
+  mail: mail,
+
+  // aws ses information
+  key: "key",
+  secret: "secret",
+})
+  // we are done
+  .then(() => console.log("finished"))
+  // there was an error
+  .catch(error => console.log("error ", error))
