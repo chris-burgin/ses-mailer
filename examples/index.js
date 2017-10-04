@@ -1,7 +1,8 @@
 // import
 const { createMail, sendMail } = require("..")
 
-// create the mailer
+// Create the mailer that we will later pass into sendMial(). We have seperated
+// this into a seperate step to clean up our code.
 const mail = createMail({
   // pick tempalte
   template: "template_1",
@@ -21,7 +22,7 @@ const mail = createMail({
   },
 })
 
-// send the mail
+// Send our mail!
 sendMail(mail)
   // we are done
   .then(() => console.log("finished"))
