@@ -1,6 +1,6 @@
 {
   "name": "ses-mailer",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "Opinionated sender with tempaltes for amazon SES.",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,5 @@
     "eslint-plugin-standard": "^3.0.1",
     "prettier-eslint": "^8.1.1"
   },
-  "repository": "chrisburgin95/is_empty.git"
+  "repository": "chrisburgin95/ses-mailer.git"
 }
