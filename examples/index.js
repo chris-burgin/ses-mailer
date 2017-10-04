@@ -7,10 +7,8 @@ const mail = createMail({
   template: "template_1",
 
   // contact information
-  to: "chrisburgin95@gmail.com, chris@downloadyouthministry.com",
+  to: "chrisburgin95@gmail.com",
   from: "chrisburgin95@gmail.com",
-  cc: "chrisburgin@downloadyouthministry.com",
-  bcc: "hair@downloadyouthministry.com",
   subject: "This is the email subject",
 
   // email content
