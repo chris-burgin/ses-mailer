@@ -8,7 +8,7 @@ provides wrapper for rate limits for amazon ses.
 - Node `8.3.0` or greater
 
 ## Installation
-`npm install ses-sender`
+`npm install ses-mailer`
 
 ## Usage
 ### Send Email
